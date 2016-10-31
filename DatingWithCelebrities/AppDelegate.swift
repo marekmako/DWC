@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        checkUserNotificationOnStartup(application)
+
+        preformActionWhenNotificationAvailable(launchOptions: launchOptions)
+        
         return true
     }
 
@@ -41,6 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: User notification
+    
+    func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
+        if notificationSettings.types != .init(rawValue: 0) {
+            application.registerForRemoteNotifications()
+        }
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print(deviceTokenString)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // TODO: odstanit
+        fatalError(error.localizedDescription)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        print("didReceiveRemoteNotification")
+        print(userInfo)
+        
+    }
 }
 

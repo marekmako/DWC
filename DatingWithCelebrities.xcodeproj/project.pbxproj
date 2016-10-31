@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		201CDD351DC67A3900D82662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD341DC67A3900D82662 /* AppDelegate.swift */; };
-		201CDD371DC67A3900D82662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD361DC67A3900D82662 /* ViewController.swift */; };
 		201CDD3A1DC67A3900D82662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201CDD381DC67A3900D82662 /* Main.storyboard */; };
 		201CDD3C1DC67A3900D82662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201CDD3B1DC67A3900D82662 /* Assets.xcassets */; };
 		201CDD3F1DC67A3900D82662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201CDD3D1DC67A3900D82662 /* LaunchScreen.storyboard */; };
+		201CDD471DC67CB700D82662 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD461DC67CB700D82662 /* Celebrity.swift */; };
+		201CDD491DC6811600D82662 /* Dating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD481DC6811600D82662 /* Dating.swift */; };
+		205CCC661DC686100088A2B3 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205CCC651DC686100088A2B3 /* Me.swift */; };
+		20A359BC1DC72C0300AF90E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A359BB1DC72C0300AF90E1 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		201CDD311DC67A3900D82662 /* DatingWithCelebrities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingWithCelebrities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201CDD341DC67A3900D82662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		201CDD361DC67A3900D82662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		201CDD391DC67A3900D82662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		201CDD3B1DC67A3900D82662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201CDD3E1DC67A3900D82662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		201CDD401DC67A3900D82662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201CDD461DC67CB700D82662 /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
+		201CDD481DC6811600D82662 /* Dating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dating.swift; sourceTree = "<group>"; };
+		205CCC651DC686100088A2B3 /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
+		20A359BA1DC72B3F00AF90E1 /* DatingWithCelebrities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatingWithCelebrities.entitlements; sourceTree = "<group>"; };
+		20A359BB1DC72C0300AF90E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +61,13 @@
 		201CDD331DC67A3900D82662 /* DatingWithCelebrities */ = {
 			isa = PBXGroup;
 			children = (
+				20A359BA1DC72B3F00AF90E1 /* DatingWithCelebrities.entitlements */,
+				20A359BB1DC72C0300AF90E1 /* User.swift */,
 				201CDD341DC67A3900D82662 /* AppDelegate.swift */,
-				201CDD361DC67A3900D82662 /* ViewController.swift */,
 				201CDD381DC67A3900D82662 /* Main.storyboard */,
+				201CDD481DC6811600D82662 /* Dating.swift */,
+				205CCC651DC686100088A2B3 /* Me.swift */,
+				201CDD461DC67CB700D82662 /* Celebrity.swift */,
 				201CDD3B1DC67A3900D82662 /* Assets.xcassets */,
 				201CDD3D1DC67A3900D82662 /* LaunchScreen.storyboard */,
 				201CDD401DC67A3900D82662 /* Info.plist */,
@@ -98,6 +109,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4HFWK8AXKL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201CDD371DC67A3900D82662 /* ViewController.swift in Sources */,
 				201CDD351DC67A3900D82662 /* AppDelegate.swift in Sources */,
+				205CCC661DC686100088A2B3 /* Me.swift in Sources */,
+				20A359BC1DC72C0300AF90E1 /* User.swift in Sources */,
+				201CDD491DC6811600D82662 /* Dating.swift in Sources */,
+				201CDD471DC67CB700D82662 /* Celebrity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DatingWithCelebrities/DatingWithCelebrities.entitlements;
 				DEVELOPMENT_TEAM = 4HFWK8AXKL;
 				INFOPLIST_FILE = DatingWithCelebrities/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekmako.DatingWithCelebrities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DatingWithCelebrities/DatingWithCelebrities.entitlements;
 				DEVELOPMENT_TEAM = 4HFWK8AXKL;
 				INFOPLIST_FILE = DatingWithCelebrities/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekmako.DatingWithCelebrities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +325,7 @@
 				201CDD451DC67A3900D82662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
