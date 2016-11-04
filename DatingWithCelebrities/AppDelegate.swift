@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         preformActionWhenNotificationAvailable(launchOptions: launchOptions)
         
+        Me().coin = 1000
+        
         return true
     }
 
@@ -60,12 +62,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         // TODO: odstanit
         fatalError(error.localizedDescription)
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("didReceiveRemoteNotification")
-        print(userInfo)
-        
     }
 }
 

@@ -13,8 +13,12 @@
 		201CDD3F1DC67A3900D82662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201CDD3D1DC67A3900D82662 /* LaunchScreen.storyboard */; };
 		201CDD471DC67CB700D82662 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD461DC67CB700D82662 /* Celebrity.swift */; };
 		201CDD491DC6811600D82662 /* Dating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CDD481DC6811600D82662 /* Dating.swift */; };
+		20313ED91DCCB6990007F92F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20313ED81DCCB6990007F92F /* DataController.swift */; };
+		20313EDC1DCCB9600007F92F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */; };
 		205CCC661DC686100088A2B3 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205CCC651DC686100088A2B3 /* Me.swift */; };
+		2094A48F1DC7509300F9810C /* Celebrity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2094A48E1DC7509300F9810C /* Celebrity.plist */; };
 		20A359BC1DC72C0300AF90E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A359BB1DC72C0300AF90E1 /* User.swift */; };
+		20F02B621DC790D800481547 /* Dating.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20F02B611DC790D800481547 /* Dating.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +30,13 @@
 		201CDD401DC67A3900D82662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		201CDD461DC67CB700D82662 /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
 		201CDD481DC6811600D82662 /* Dating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dating.swift; sourceTree = "<group>"; };
+		20313ED81DCCB6990007F92F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		20313EDB1DCCB9600007F92F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		205CCC651DC686100088A2B3 /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
+		2094A48E1DC7509300F9810C /* Celebrity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Celebrity.plist; sourceTree = "<group>"; };
 		20A359BA1DC72B3F00AF90E1 /* DatingWithCelebrities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatingWithCelebrities.entitlements; sourceTree = "<group>"; };
 		20A359BB1DC72C0300AF90E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20F02B611DC790D800481547 /* Dating.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dating.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +78,11 @@
 				201CDD461DC67CB700D82662 /* Celebrity.swift */,
 				201CDD3B1DC67A3900D82662 /* Assets.xcassets */,
 				201CDD3D1DC67A3900D82662 /* LaunchScreen.storyboard */,
+				20F02B611DC790D800481547 /* Dating.plist */,
+				2094A48E1DC7509300F9810C /* Celebrity.plist */,
 				201CDD401DC67A3900D82662 /* Info.plist */,
+				20313ED81DCCB6990007F92F /* DataController.swift */,
+				20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */,
 			);
 			path = DatingWithCelebrities;
 			sourceTree = "<group>";
@@ -102,12 +114,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Marek Mako";
 				TargetAttributes = {
 					201CDD301DC67A3900D82662 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4HFWK8AXKL;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -140,7 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2094A48F1DC7509300F9810C /* Celebrity.plist in Resources */,
 				201CDD3F1DC67A3900D82662 /* LaunchScreen.storyboard in Resources */,
+				20F02B621DC790D800481547 /* Dating.plist in Resources */,
 				201CDD3C1DC67A3900D82662 /* Assets.xcassets in Resources */,
 				201CDD3A1DC67A3900D82662 /* Main.storyboard in Resources */,
 			);
@@ -154,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				201CDD351DC67A3900D82662 /* AppDelegate.swift in Sources */,
+				20313ED91DCCB6990007F92F /* DataController.swift in Sources */,
 				205CCC661DC686100088A2B3 /* Me.swift in Sources */,
+				20313EDC1DCCB9600007F92F /* DataModel.xcdatamodeld in Sources */,
 				20A359BC1DC72C0300AF90E1 /* User.swift in Sources */,
 				201CDD491DC6811600D82662 /* Dating.swift in Sources */,
 				201CDD471DC67CB700D82662 /* Celebrity.swift in Sources */,
@@ -201,6 +218,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -223,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -267,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -328,6 +347,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20313EDB1DCCB9600007F92F /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 20313EDB1DCCB9600007F92F /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 201CDD291DC67A3900D82662 /* Project object */;
 }
