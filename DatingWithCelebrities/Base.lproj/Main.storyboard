@@ -136,7 +136,7 @@
                                 <rect key="frame" x="16" y="20" width="288" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celebrity_table_cell" rowHeight="500" id="Xgi-WX-y2E" customClass="CelebritySelectTableCell" customModule="DatingWithCelebrities" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebritySelectTableViewCell" rowHeight="500" id="Xgi-WX-y2E" customClass="CelebritySelectTableViewCell" customModule="DatingWithCelebrities" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="288" height="500"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xgi-WX-y2E" id="ltB-iP-YZn">
@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="2940" y="801"/>
         </scene>
-        <!--Select Dating Type -->
+        <!--Dating Type select-->
         <scene sceneID="gpy-Rf-3aW">
             <objects>
-                <viewController id="Cet-vt-edf" userLabel="Select Dating Type " customClass="SelectDatingTypeViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cet-vt-edf" userLabel="Dating Type select" customClass="DatingTypeSelectViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uxa-gL-aKM"/>
                         <viewControllerLayoutGuide type="bottom" id="q33-XD-aMd"/>
@@ -308,10 +308,10 @@
             </objects>
             <point key="canvasLocation" x="3413" y="1576"/>
         </scene>
-        <!--Select Dating Time-->
+        <!--Dating Time Select-->
         <scene sceneID="Ilw-x5-bva">
             <objects>
-                <viewController id="ToZ-18-d39" userLabel="Select Dating Time" customClass="SelectDatingTimeViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ToZ-18-d39" userLabel="Dating Time Select" customClass="DatingTimeSelectViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GNX-tQ-if6"/>
                         <viewControllerLayoutGuide type="bottom" id="b6j-NQ-gSK"/>
