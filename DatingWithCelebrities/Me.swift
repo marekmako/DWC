@@ -42,6 +42,17 @@ class Me {
         try! dataController.managedObjectContext.save()
     }
     
+    func findDatingWithCelebrity(byNotificationId: Int) -> DatingWithCelebrityEntity? {
+        let index = datings.index { (entity: DatingWithCelebrityEntity) -> Bool in
+            return entity.notificationId == Int16(byNotificationId)
+        }
+        guard let datingIndex = index else {
+            return nil
+        }
+        
+        return datings[datingIndex]
+    }
+    
     func remove(dating: DatingWithCelebrityEntity)  {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: DatingWithCelebrityEntity.self))
         request.predicate = NSPredicate(format: "(notificationId = %@) and (time = %@) and (celebrity.id = %@) and (datingType.id = %@)",
@@ -67,7 +78,7 @@ class AboutMeViewController: UIViewController {
 }
 
 
-
+// TODO: Vytvorit vlastny VC
 class MyDatingListViewController: UIViewController {
     
     fileprivate let MY_DATING_TABLE_CELL_NAME = "my_dating_table_cell"
@@ -81,10 +92,30 @@ class MyDatingListViewController: UIViewController {
     @IBOutlet weak var datingsTable: UITableView!
     
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didDismissDatingWithCelebrityVC), name: DatingWithCelebrityViewController.DismissedNotificationName, object: nil)
+        
         datingsTable.dataSource = self
         datingsTable.delegate = self
         
-//        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+    }
+    
+    /// pretoze data tabulky mozu byt zmene notifikaciami
+    func didBecomeActive() {
+        datingsTable.reloadData()
+    }
+    
+    /// DatingWithCelebrityVC zmaze data v mojich datingoch je potrebne refreshunt tabulku
+    func didDismissDatingWithCelebrityVC() {
+        datingsTable.reloadData()
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        datingsTable.setEditing(editing, animated: animated)
     }
 }
 

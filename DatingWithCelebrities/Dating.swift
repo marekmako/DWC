@@ -33,16 +33,9 @@ class DatingResolver {
             return false
             
         } else {
-            registerForUserNotification(in: UIApplication.shared)
-            
-            let notificationId = Int16(arc4random_uniform(UInt32(Int16.max)))
-            let notification = UILocalNotification()
-            notification.alertTitle = "👉 \(celebrity.name) missing you 👈"
-            notification.alertBody = "Hello it's time to \(dating.name) with \(celebrity.name) 😘"
-            notification.fireDate = time
-            notification.soundName = UILocalNotificationDefaultSoundName
-            notification.userInfo = ["id" : notificationId]
-            UIApplication.shared.scheduleLocalNotification(notification)
+            let notificationId = LocalNotification.shared.registerLocalNotificationForDating(with: celebrity,
+                                                                                             datingType: dating,
+                                                                                             at: time)
             
             me.addDatingWithCelebrity(celebrity: celebrity, dating: dating, time: time, notificationId: notificationId)
             me.remove(coin: Int(dating.price))

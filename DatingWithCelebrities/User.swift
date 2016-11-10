@@ -6,28 +6,14 @@
 //  Copyright © 2016 Marek Mako. All rights reserved.
 //
 
+
+// TODO: odstranit
+
 import UIKit
 
 
 
-fileprivate let userDefaults = UserDefaults.standard
 
-
-
-func registerForUserNotification(in application: UIApplication) {
-    let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-    application.registerUserNotificationSettings(settings)
-    
-    userDefaults.set(true, forKey: "checkUserNotificationOnStartup")
-}
-
-
-
-func checkUserNotificationOnStartup(_ application: UIApplication) {
-    if userDefaults.bool(forKey: "checkUserNotificationOnStartup") {
-        registerForUserNotification(in: application)
-    }
-}
 
 
 

@@ -11,9 +11,6 @@ import UIKit
 
 
 class DatingInvitationViewController: UIViewController {
-
-    fileprivate let DATING_INVITATION_OK_VC_NAME = "dating_invitation_ok"
-    fileprivate let DATING_INVITATION_NOK_VC_NAME = "dating_invitation_nok"
     
     private let celebrityRepo = CelebrityRepository()
     
@@ -96,13 +93,17 @@ extension DatingInvitationViewController {
         
         let isDatingAccepted = DatingResolver().accept(with: celebrity!, dating: selectedDatingEntity, time: selectedDatingTime!)
         
+        // TODO: message + actions
+        let alertVC = UIAlertController(title: nil, message: "TODO: message + actions", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
         if isDatingAccepted {
-            let vc = storyboard?.instantiateViewController(withIdentifier: DATING_INVITATION_OK_VC_NAME)
-            present(vc!, animated: true, completion: nil)
+            alertVC.title = "ACCEPTED!"
             
         } else {
-            let vc = storyboard?.instantiateViewController(withIdentifier: DATING_INVITATION_NOK_VC_NAME)
-            present(vc!, animated: true, completion: nil)
+            alertVC.title = "REJECTED!"
         }
+        
+        present(alertVC, animated: true, completion: nil)
     }
 }

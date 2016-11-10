@@ -18,11 +18,14 @@
 		201F850E1DCDB336008E4108 /* DatingInvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F850D1DCDB336008E4108 /* DatingInvitationViewController.swift */; };
 		201F85101DCDB482008E4108 /* DatingTypeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F850F1DCDB482008E4108 /* DatingTypeSelectViewController.swift */; };
 		201F85121DCDB4DB008E4108 /* DatingTimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F85111DCDB4DB008E4108 /* DatingTimeSelectViewController.swift */; };
+		201F85141DCE07EE008E4108 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F85131DCE07EE008E4108 /* MeViewController.swift */; };
 		20313ED91DCCB6990007F92F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20313ED81DCCB6990007F92F /* DataController.swift */; };
 		20313EDC1DCCB9600007F92F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */; };
 		205CCC661DC686100088A2B3 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205CCC651DC686100088A2B3 /* Me.swift */; };
 		2094A48F1DC7509300F9810C /* Celebrity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2094A48E1DC7509300F9810C /* Celebrity.plist */; };
 		20A359BC1DC72C0300AF90E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A359BB1DC72C0300AF90E1 /* User.swift */; };
+		20BA63AC1DD346F4005DCBF8 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA63AB1DD346F4005DCBF8 /* Notification.swift */; };
+		20BA63AE1DD347E4005DCBF8 /* DatingWithCelebrityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA63AD1DD347E4005DCBF8 /* DatingWithCelebrityViewController.swift */; };
 		20F02B621DC790D800481547 /* DatingType.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20F02B611DC790D800481547 /* DatingType.plist */; };
 /* End PBXBuildFile section */
 
@@ -40,12 +43,15 @@
 		201F850D1DCDB336008E4108 /* DatingInvitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatingInvitationViewController.swift; sourceTree = "<group>"; };
 		201F850F1DCDB482008E4108 /* DatingTypeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatingTypeSelectViewController.swift; sourceTree = "<group>"; };
 		201F85111DCDB4DB008E4108 /* DatingTimeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatingTimeSelectViewController.swift; sourceTree = "<group>"; };
+		201F85131DCE07EE008E4108 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		20313ED81DCCB6990007F92F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		20313EDB1DCCB9600007F92F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		205CCC651DC686100088A2B3 /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
 		2094A48E1DC7509300F9810C /* Celebrity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Celebrity.plist; sourceTree = "<group>"; };
 		20A359BA1DC72B3F00AF90E1 /* DatingWithCelebrities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatingWithCelebrities.entitlements; sourceTree = "<group>"; };
 		20A359BB1DC72C0300AF90E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20BA63AB1DD346F4005DCBF8 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		20BA63AD1DD347E4005DCBF8 /* DatingWithCelebrityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatingWithCelebrityViewController.swift; sourceTree = "<group>"; };
 		20F02B611DC790D800481547 /* DatingType.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DatingType.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,23 +87,26 @@
 			children = (
 				20A359BA1DC72B3F00AF90E1 /* DatingWithCelebrities.entitlements */,
 				20A359BB1DC72C0300AF90E1 /* User.swift */,
-				201CDD341DC67A3900D82662 /* AppDelegate.swift */,
-				201CDD381DC67A3900D82662 /* Main.storyboard */,
+				201CDD461DC67CB700D82662 /* Celebrity.swift */,
+				201F85091DCDAFE9008E4108 /* CelebritySelectViewController.swift */,
+				201F850B1DCDB0D4008E4108 /* CelebritySelectTableViewCell.swift */,
 				201CDD481DC6811600D82662 /* Dating.swift */,
 				201F850F1DCDB482008E4108 /* DatingTypeSelectViewController.swift */,
 				201F85111DCDB4DB008E4108 /* DatingTimeSelectViewController.swift */,
 				201F850D1DCDB336008E4108 /* DatingInvitationViewController.swift */,
+				20BA63AD1DD347E4005DCBF8 /* DatingWithCelebrityViewController.swift */,
 				205CCC651DC686100088A2B3 /* Me.swift */,
-				201CDD461DC67CB700D82662 /* Celebrity.swift */,
-				201F85091DCDAFE9008E4108 /* CelebritySelectViewController.swift */,
-				201F850B1DCDB0D4008E4108 /* CelebritySelectTableViewCell.swift */,
+				201F85131DCE07EE008E4108 /* MeViewController.swift */,
+				201CDD381DC67A3900D82662 /* Main.storyboard */,
 				201CDD3B1DC67A3900D82662 /* Assets.xcassets */,
 				201CDD3D1DC67A3900D82662 /* LaunchScreen.storyboard */,
+				201CDD341DC67A3900D82662 /* AppDelegate.swift */,
+				20313ED81DCCB6990007F92F /* DataController.swift */,
+				20BA63AB1DD346F4005DCBF8 /* Notification.swift */,
+				20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */,
 				20F02B611DC790D800481547 /* DatingType.plist */,
 				2094A48E1DC7509300F9810C /* Celebrity.plist */,
 				201CDD401DC67A3900D82662 /* Info.plist */,
-				20313ED81DCCB6990007F92F /* DataController.swift */,
-				20313EDA1DCCB9600007F92F /* DataModel.xcdatamodeld */,
 			);
 			path = DatingWithCelebrities;
 			sourceTree = "<group>";
@@ -183,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201F85141DCE07EE008E4108 /* MeViewController.swift in Sources */,
 				201F85121DCDB4DB008E4108 /* DatingTimeSelectViewController.swift in Sources */,
 				201F850A1DCDAFE9008E4108 /* CelebritySelectViewController.swift in Sources */,
+				20BA63AE1DD347E4005DCBF8 /* DatingWithCelebrityViewController.swift in Sources */,
 				201CDD351DC67A3900D82662 /* AppDelegate.swift in Sources */,
 				201F85101DCDB482008E4108 /* DatingTypeSelectViewController.swift in Sources */,
 				20313ED91DCCB6990007F92F /* DataController.swift in Sources */,
@@ -192,6 +203,7 @@
 				20313EDC1DCCB9600007F92F /* DataModel.xcdatamodeld in Sources */,
 				201F850C1DCDB0D4008E4108 /* CelebritySelectTableViewCell.swift in Sources */,
 				20A359BC1DC72C0300AF90E1 /* User.swift in Sources */,
+				20BA63AC1DD346F4005DCBF8 /* Notification.swift in Sources */,
 				201CDD491DC6811600D82662 /* Dating.swift in Sources */,
 				201F850E1DCDB336008E4108 /* DatingInvitationViewController.swift in Sources */,
 				201CDD471DC67CB700D82662 /* Celebrity.swift in Sources */,

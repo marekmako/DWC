@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hMQ-QK-LNW">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,31 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About me-->
-        <scene sceneID="kei-b3-erf">
-            <objects>
-                <viewController id="k8J-sd-Q69" userLabel="About me" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qfn-UQ-6zI"/>
-                        <viewControllerLayoutGuide type="bottom" id="AQL-24-x44"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="L0O-DY-1nf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="About Me" id="fUV-3I-M5K">
-                        <barButtonItem key="rightBarButtonItem" title="My Date" id="pCQ-TM-15E">
-                            <connections>
-                                <segue destination="J5Q-fV-qfR" kind="show" id="BrE-Qa-2IL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fti-uf-8Tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2081" y="-231"/>
-        </scene>
         <!--My date list-->
         <scene sceneID="S5n-AD-2bR">
             <objects>
@@ -44,37 +19,37 @@
                         <viewControllerLayoutGuide type="bottom" id="1OG-ua-WLH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="E1f-zD-Swr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jWW-X2-xdH">
-                                <rect key="frame" x="16" y="20" width="288" height="528"/>
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="my_dating_table_cell" id="LQr-OY-qn0" customClass="MyDatingListTableViewCell" customModule="DatingWithCelebrities" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQr-OY-qn0" id="6Wf-4E-lkB">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bEW-sO-OCE">
-                                                    <rect key="frame" x="8" y="16" width="115" height="168"/>
+                                                    <rect key="frame" x="8" y="16" width="137" height="168"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date type" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuK-6L-aFY">
-                                                    <rect key="frame" x="207" y="45" width="72.5" height="21"/>
+                                                    <rect key="frame" x="262" y="45" width="73" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9u-rq-wil">
-                                                    <rect key="frame" x="208" y="16" width="72" height="21"/>
+                                                    <rect key="frame" x="263" y="16" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celebrity Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozd-fs-cgI">
-                                                    <rect key="frame" x="131" y="124" width="149" height="60"/>
+                                                    <rect key="frame" x="153" y="154" width="182" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -118,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9B-u5-TH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975.625" y="-232.3943661971831"/>
+            <point key="canvasLocation" x="2081" y="45"/>
         </scene>
         <!--Select Celebrity-->
         <scene sceneID="tne-QT-ifu">
@@ -129,25 +104,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ftl-8Q-Yc3">
-                                <rect key="frame" x="16" y="20" width="288" height="540"/>
+                                <rect key="frame" x="16" y="20" width="343" height="639"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebritySelectTableViewCell" rowHeight="500" id="Xgi-WX-y2E" customClass="CelebritySelectTableViewCell" customModule="DatingWithCelebrities" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="288" height="500"/>
+                                        <rect key="frame" x="0.0" y="1" width="343" height="500"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xgi-WX-y2E" id="ltB-iP-YZn">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="500"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="500"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SSp-cw-0Yv">
-                                                    <rect key="frame" x="8" y="8" width="272" height="454"/>
+                                                    <rect key="frame" x="8" y="8" width="327" height="454"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celebrity name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-vC-cKp">
-                                                    <rect key="frame" x="64.5" y="462" width="159" height="30"/>
+                                                    <rect key="frame" x="92" y="462" width="159" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -179,13 +154,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Ftl-8Q-Yc3" secondAttribute="trailing" id="s9u-jN-hXA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DiX-F5-c3e">
-                        <barButtonItem key="leftBarButtonItem" title="About me" id="6CK-4a-B8O">
-                            <connections>
-                                <segue destination="k8J-sd-Q69" kind="show" id="r9E-to-Igc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="DiX-F5-c3e"/>
                     <connections>
                         <outlet property="celebrityTableView" destination="Ftl-8Q-Yc3" id="ys4-pa-Qjj"/>
                     </connections>
@@ -203,27 +172,27 @@
                         <viewControllerLayoutGuide type="bottom" id="j6z-eq-Fcz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3nb-NI-lXy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ciC-SP-Nu4">
-                                <rect key="frame" x="24" y="72" width="272" height="227"/>
+                                <rect key="frame" x="24" y="72" width="327" height="267"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-20-tZF">
-                                <rect key="frame" x="139" y="518" width="42" height="30"/>
+                                <rect key="frame" x="166.5" y="617" width="42" height="30"/>
                                 <state key="normal" title="Invite!"/>
                                 <connections>
                                     <action selector="onInvite" destination="7Qq-uG-gA0" eventType="touchUpInside" id="7sx-Ey-79r"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celebrity name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGG-Sl-9dK">
-                                <rect key="frame" x="80.5" y="307" width="159" height="30"/>
+                                <rect key="frame" x="108" y="347" width="159" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-C0-3dL">
-                                <rect key="frame" x="24" y="353" width="272" height="30"/>
+                                <rect key="frame" x="24" y="393" width="327" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Choose your dream date"/>
                                 <connections>
@@ -231,7 +200,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLI-3f-zAw">
-                                <rect key="frame" x="24" y="399" width="272" height="30"/>
+                                <rect key="frame" x="24" y="439" width="327" height="30"/>
                                 <state key="normal" title="Select time of date"/>
                                 <connections>
                                     <segue destination="ToZ-18-d39" kind="presentation" modalPresentationStyle="currentContext" id="gC3-Q1-p9g"/>
@@ -277,14 +246,14 @@
                         <viewControllerLayoutGuide type="bottom" id="q33-XD-aMd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8dy-Z1-EPu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VO-V5-FNa">
-                                <rect key="frame" x="0.0" y="176" width="320" height="216"/>
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qk-Wr-zlM">
-                                <rect key="frame" x="145" y="400" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="449.5" width="30" height="30"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <segue destination="j4y-1g-aBl" kind="unwind" unwindAction="unwindToDatingInvitationViewControllerWithSegue:" id="5Un-2Z-AIZ"/>
@@ -317,17 +286,17 @@
                         <viewControllerLayoutGuide type="bottom" id="b6j-NQ-gSK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tXq-hv-lKW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dPc-f3-jhT">
-                                <rect key="frame" x="0.0" y="176" width="320" height="216"/>
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="499791328.27068102">
                                     <!--2016-11-02 14:55:28 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-4B-QZf">
-                                <rect key="frame" x="145" y="400" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="449.5" width="30" height="30"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <segue destination="Nn5-cz-RTK" kind="unwind" unwindAction="unwindToDatingInvitationViewControllerWithSegue:" id="Oeh-49-JKO"/>
@@ -351,27 +320,27 @@
             </objects>
             <point key="canvasLocation" x="4273" y="1576"/>
         </scene>
-        <!--Dating Invitation OK-->
-        <scene sceneID="W7c-RV-ZSa">
+        <!--Dating With Celebrity-->
+        <scene sceneID="fqK-NN-QXv">
             <objects>
-                <viewController storyboardIdentifier="dating_invitation_ok" id="tAP-JK-zo7" userLabel="Dating Invitation OK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DatingWithCelebrityViewController" id="1b9-6b-fJF" userLabel="Dating With Celebrity" customClass="DatingWithCelebrityViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tdU-fH-5sE"/>
-                        <viewControllerLayoutGuide type="bottom" id="b1J-er-jSy"/>
+                        <viewControllerLayoutGuide type="top" id="UnH-JP-0kB"/>
+                        <viewControllerLayoutGuide type="bottom" id="O5X-Cr-PQL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="n4z-MU-OUQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" id="RFn-a1-l84">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAh-39-uwG">
-                                <rect key="frame" x="266" y="28" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfG-2A-N38">
+                                <rect key="frame" x="337" y="28" width="30" height="30"/>
                                 <state key="normal" title="X"/>
                                 <connections>
-                                    <segue destination="C4E-Zb-fef" kind="unwind" unwindAction="unwindToCelebritySelectViewControllerWithSegue:" id="2uX-Y6-D4C"/>
+                                    <action selector="onCancel" destination="1b9-6b-fJF" eventType="touchUpInside" id="0p0-dr-4b8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rande prijate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3u-5y-Q2H">
-                                <rect key="frame" x="24" y="273.5" width="272" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rande s celebritou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rML-F0-EKC">
+                                <rect key="frame" x="116" y="323" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -379,59 +348,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="c3u-5y-Q2H" firstAttribute="leading" secondItem="n4z-MU-OUQ" secondAttribute="leadingMargin" constant="8" id="IuR-kC-qtK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="c3u-5y-Q2H" secondAttribute="trailing" constant="8" id="Rhg-pX-Olk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pAh-39-uwG" secondAttribute="trailing" constant="8" id="Vg5-H6-ZwU"/>
-                            <constraint firstItem="pAh-39-uwG" firstAttribute="top" secondItem="tdU-fH-5sE" secondAttribute="bottom" constant="8" id="anP-0I-ooy"/>
-                            <constraint firstItem="c3u-5y-Q2H" firstAttribute="centerY" secondItem="n4z-MU-OUQ" secondAttribute="centerY" id="hMK-Qy-IgY"/>
+                            <constraint firstItem="MfG-2A-N38" firstAttribute="trailing" secondItem="RFn-a1-l84" secondAttribute="trailingMargin" constant="8" id="5PG-45-dTE"/>
+                            <constraint firstItem="rML-F0-EKC" firstAttribute="centerY" secondItem="RFn-a1-l84" secondAttribute="centerY" id="Dzs-T5-5Ki"/>
+                            <constraint firstItem="rML-F0-EKC" firstAttribute="centerX" secondItem="RFn-a1-l84" secondAttribute="centerX" id="KvP-2b-awD"/>
+                            <constraint firstItem="MfG-2A-N38" firstAttribute="top" secondItem="UnH-JP-0kB" secondAttribute="bottom" constant="8" id="yS1-hs-q5b"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u02-zz-wFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="C4E-Zb-fef" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gc-d1-WUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3874" y="555"/>
-        </scene>
-        <!--Dating Invitation NOK-->
-        <scene sceneID="1pH-ek-VPP">
-            <objects>
-                <viewController storyboardIdentifier="dating_invitation_nok" id="7Mp-hI-Uzb" userLabel="Dating Invitation NOK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lp2-gm-NUT"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZL9-iR-kxg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RLu-8G-pdJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4p-cM-SfW">
-                                <rect key="frame" x="266" y="28" width="30" height="30"/>
-                                <state key="normal" title="X"/>
-                                <connections>
-                                    <segue destination="2U4-J0-whv" kind="unwind" unwindAction="unwindToDatingInvitationViewControllerWithSegue:" id="rhk-dE-vs5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rande zamietnute, na tento typ rande nemas dostatok kreditov, cakaj do zajtra alebo pozri reklamu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uG-RV-iMD">
-                                <rect key="frame" x="8" y="253.5" width="304" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="O4p-cM-SfW" secondAttribute="trailing" constant="8" id="AZl-el-3aQ"/>
-                            <constraint firstItem="1uG-RV-iMD" firstAttribute="leading" secondItem="RLu-8G-pdJ" secondAttribute="leading" constant="8" id="CCz-F3-GiB"/>
-                            <constraint firstAttribute="trailing" secondItem="1uG-RV-iMD" secondAttribute="trailing" constant="8" id="I7l-qk-fpH"/>
-                            <constraint firstItem="O4p-cM-SfW" firstAttribute="top" secondItem="lp2-gm-NUT" secondAttribute="bottom" constant="8" id="brh-Kg-oRg"/>
-                            <constraint firstItem="1uG-RV-iMD" firstAttribute="centerY" secondItem="RLu-8G-pdJ" secondAttribute="centerY" id="nZo-rc-aX9"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jRw-ua-Hnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="2U4-J0-whv" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="4663" y="555"/>
+            <point key="canvasLocation" x="3881" y="800"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xSo-ik-hMC">
@@ -444,12 +370,83 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1fX-2K-XCQ"/>
+                        <segue destination="gr5-fA-e07" kind="relationship" relationship="rootViewController" id="e9g-dG-pcp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lns-ug-CS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1083.75" y="800.70422535211264"/>
+            <point key="canvasLocation" x="354" y="800"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="xhR-z6-stM">
+            <objects>
+                <viewController id="gr5-fA-e07" userLabel="Me" customClass="MeViewController" customModule="DatingWithCelebrities" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PPx-Nl-CPj"/>
+                        <viewControllerLayoutGuide type="bottom" id="vTy-i4-Uvv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YA5-ID-c5p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCN-IA-ljt">
+                                <rect key="frame" x="24" y="614" width="244" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Select My Dating With Celebrity"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bQw-ZI-Vcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeA-Dh-D4L">
+                                <rect key="frame" x="24" y="561" width="36" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Gifts"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-Vm-Qw6">
+                                <rect key="frame" x="24" y="508" width="115" height="33"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <state key="normal" title="My Dating Plan"/>
+                                <connections>
+                                    <segue destination="J5Q-fV-qfR" kind="show" id="oEi-Gi-Yix"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hearth" translatesAutoresizingMaskIntoConstraints="NO" id="1jt-gw-CJ3">
+                                <rect key="frame" x="254.5" y="72" width="112.5" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFx-m0-aMX">
+                                <rect key="frame" x="285" y="180" width="51.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1jt-gw-CJ3" firstAttribute="height" secondItem="YA5-ID-c5p" secondAttribute="height" multiplier="0.15" id="AKZ-aP-Zxb"/>
+                            <constraint firstItem="1jt-gw-CJ3" firstAttribute="trailing" secondItem="YA5-ID-c5p" secondAttribute="trailingMargin" constant="8" id="BF0-HZ-lwD"/>
+                            <constraint firstItem="vTy-i4-Uvv" firstAttribute="top" secondItem="qCN-IA-ljt" secondAttribute="bottom" constant="20" id="EFf-q5-QJP"/>
+                            <constraint firstItem="HFx-m0-aMX" firstAttribute="top" secondItem="1jt-gw-CJ3" secondAttribute="bottom" constant="8" id="Hyn-Pt-ccJ"/>
+                            <constraint firstItem="1jt-gw-CJ3" firstAttribute="width" secondItem="YA5-ID-c5p" secondAttribute="width" multiplier="0.3" id="TPn-RK-XlL"/>
+                            <constraint firstItem="CeA-Dh-D4L" firstAttribute="leading" secondItem="YA5-ID-c5p" secondAttribute="leadingMargin" constant="8" id="Yeg-3G-RbR"/>
+                            <constraint firstItem="1jt-gw-CJ3" firstAttribute="top" secondItem="PPx-Nl-CPj" secondAttribute="bottom" constant="8" id="ZHT-BZ-9wI"/>
+                            <constraint firstItem="yhb-Vm-Qw6" firstAttribute="leading" secondItem="YA5-ID-c5p" secondAttribute="leadingMargin" constant="8" id="dSF-yC-iOU"/>
+                            <constraint firstItem="qCN-IA-ljt" firstAttribute="top" secondItem="CeA-Dh-D4L" secondAttribute="bottom" constant="20" id="epW-eb-CjS"/>
+                            <constraint firstItem="HFx-m0-aMX" firstAttribute="centerX" secondItem="1jt-gw-CJ3" secondAttribute="centerX" id="pmt-4h-SBf"/>
+                            <constraint firstItem="CeA-Dh-D4L" firstAttribute="top" secondItem="yhb-Vm-Qw6" secondAttribute="bottom" constant="20" id="t8Q-iR-Gcj"/>
+                            <constraint firstItem="qCN-IA-ljt" firstAttribute="leading" secondItem="YA5-ID-c5p" secondAttribute="leadingMargin" constant="8" id="tfv-zA-ADd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NPY-w2-CJg"/>
+                    <connections>
+                        <outlet property="coinLabel" destination="HFx-m0-aMX" id="Rzt-9i-tbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fT5-6x-TxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="801"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hearth" width="278" height="236"/>
+    </resources>
 </document>
