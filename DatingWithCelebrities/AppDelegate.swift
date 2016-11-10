@@ -6,6 +6,10 @@
 //  Copyright © 2016 Marek Mako. All rights reserved.
 //
 
+// TODO: mozny zaciatok rande posunut na minimalne + 5 minut
+
+// TODO: ak vyskoci alert na zacinajuce rande a ostane na obrazovke, ak do toho vyskoci dalsi alert jedno rande sa ignoruje, z toho dovodu v tabulke moje rande ostanu aj rande ktore uz nebudu notifikovane, teda su neaktive, neda sa do nich vstupit
+
 import UIKit
 import CoreData
 
