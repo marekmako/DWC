@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DatingTypeSelectViewController: UIViewController {
+class DatingTypeSelectViewController: BaseViewController {
 
     fileprivate let datingRepo = DatingRepository()
     

@@ -73,13 +73,13 @@ class Me {
 
 
 
-class AboutMeViewController: UIViewController {
+class AboutMeViewController: BaseViewController {
     
 }
 
 
 // TODO: Vytvorit vlastny VC
-class MyDatingListViewController: UIViewController {
+class MyDatingListViewController: BaseViewController {
     
     fileprivate let MY_DATING_TABLE_CELL_NAME = "my_dating_table_cell"
     

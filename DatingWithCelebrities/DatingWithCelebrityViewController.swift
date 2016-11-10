@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DatingWithCelebrityViewController: UIViewController {
+class DatingWithCelebrityViewController: BaseViewController {
     
     static let DismissedNotificationName = Notification.Name("DatingWithCelebrityViewControllerDissmised")
     

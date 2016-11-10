@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class DatingInvitationViewController: UIViewController {
+class DatingInvitationViewController: BaseViewController {
     
     private let celebrityRepo = CelebrityRepository()
     

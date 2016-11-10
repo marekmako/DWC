@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class CelebritySelectViewController: UIViewController {
+class CelebritySelectViewController: BaseViewController {
 
     fileprivate let celebrityRepository = CelebrityRepository()
     

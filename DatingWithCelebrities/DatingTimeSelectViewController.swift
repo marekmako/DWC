@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DatingTimeSelectViewController: UIViewController {
+class DatingTimeSelectViewController: BaseViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
     

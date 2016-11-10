@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+class MeViewController: BaseViewController {
     
     private let me = Me()
     
@@ -19,6 +19,8 @@ class MeViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         coinLabel.text = String(me.coin)
     }
     

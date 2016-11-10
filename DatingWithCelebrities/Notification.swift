@@ -86,6 +86,17 @@ class LocalNotification {
         currentVC?.present(alertVC, animated: true, completion: nil)
     }
     
+    func handleRecievedDatingWhenAppInactive(notification: UILocalNotification) {
+        userDefaults.set(true, forKey: "has_dating")
+        userDefaults.set(notification.userInfo![kLocalNotificationId], forKey: "dating_notification_id")
+    }
+    
+    func tryHandleDatingWhenViewControllerDidAppear() {
+        userDefaults.set(false, forKey: "has_dating")
+        let notificationId = userDefaults.integer(forKey: "dating_notification_id")
+        handleRecievedDatingWhenAppActive(notificationId: notificationId)
+    }
+    
     func handleDatingAction(identifier: String, notification: UILocalNotification)  {
         guard let datingWithCelebrity = me.findDatingWithCelebrity(byNotificationId: notification.userInfo![kLocalNotificationId] as! Int) else {
             return

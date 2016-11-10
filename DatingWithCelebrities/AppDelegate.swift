@@ -19,8 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tryImportInitialData()
         
         LocalNotification.shared.checkUserNotificationOnStartup(application)
-
-        preformActionWhenNotificationAvailable(launchOptions: launchOptions)
+        
+        if let notification = launchOptions?[UIApplicationLaunchOptionsKey.localNotification] as? UILocalNotification {
+            LocalNotification.shared.handleRecievedDatingWhenAppInactive(notification: notification)
+        }
         
         Me().coin = 1000
         
@@ -28,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: User notification
+    
+    
     
     func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
         if notificationSettings.types != .init(rawValue: 0) {
