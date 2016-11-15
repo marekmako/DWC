@@ -10,8 +10,6 @@ import UIKit
 
 class MyDatingListViewController: BaseViewController {
     
-    fileprivate let MY_DATING_TABLE_CELL_NAME = "my_dating_table_cell"
-    
     fileprivate let me = Me()
     
     fileprivate var datingTableData: [DatingWithCelebrityEntity] {
@@ -65,7 +63,7 @@ extension MyDatingListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MY_DATING_TABLE_CELL_NAME) as! MyDatingListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MyDatingListTableViewCell.self)) as! MyDatingListTableViewCell
         
         cell.datingWithSelebrityEntity = datingTableData[indexPath.row]
         

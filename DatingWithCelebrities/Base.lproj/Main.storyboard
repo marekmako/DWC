@@ -26,7 +26,7 @@
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="my_dating_table_cell" id="LQr-OY-qn0" customClass="MyDatingListTableViewCell" customModule="DatingWithCelebrities" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyDatingListTableViewCell" id="LQr-OY-qn0" customClass="MyDatingListTableViewCell" customModule="DatingWithCelebrities" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LQr-OY-qn0" id="6Wf-4E-lkB">
