@@ -14,23 +14,67 @@ class DatingWithCelebrityViewController: BaseViewController {
     
     private let me = Me()
     
+    /// from segue
     var datingWithCelebrity: DatingWithCelebrityEntity?
 
     @IBAction func onCancel() {
         me.remove(dating: datingWithCelebrity!)
-        dismiss(animated: true, completion: nil)
-        NotificationCenter.default.post(name: DatingWithCelebrityViewController.DismissedNotificationName, object: nil)
+        
+        dismiss(animated: true, completion: {
+            NotificationCenter.default.post(name: DatingWithCelebrityViewController.DismissedNotificationName, object: nil)
+        })
     }
+    
+    // MARK: FOTOALBUM
+    private(set) var photos = [UIImage]()
+    
+    @IBOutlet weak var currPhotoImageView: UIImageView!
 
+    @IBAction func onBackwardPhotoAction() {
+        let index = photos.index(of: currPhotoImageView.image!)!
+        if index > 0 {
+            let prewIndex = index - 1
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.currPhotoImageView.alpha = 0
+                self.currPhotoImageView.image = self.photos[prewIndex]
+                self.currPhotoImageView.alpha = 1
+            })
+        }
+    }
+    
+    @IBAction func onForwardPhotoAction() {
+        let index = photos.index(of: currPhotoImageView.image!)!
+        if index < photos.count - 1 {
+            let nextIndex = index + 1
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.currPhotoImageView.alpha = 0
+                self.currPhotoImageView.image = self.photos[nextIndex]
+                self.currPhotoImageView.alpha = 1
+                
+            }, completion: { (isComplete) in
+                
+            })
+        }
+    }
+    
+    
+    
+    
+    // MARK: LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        guard nil != datingWithCelebrity else {
+            fatalError("datingWithCelebrity naplnit zo segue")
+        }
+        
+        photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-detail")!)
+        photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-love")!)
+        photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-select")!)
+        
+        currPhotoImageView.image = photos.first
     }
     
 
