@@ -59,9 +59,6 @@ class DatingWithCelebrityViewController: BaseViewController {
         }
     }
     
-    
-    
-    
     // MARK: LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
