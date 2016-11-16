@@ -52,9 +52,6 @@ class DatingWithCelebrityViewController: BaseViewController {
                 self.currPhotoImageView.alpha = 0
                 self.currPhotoImageView.image = self.photos[nextIndex]
                 self.currPhotoImageView.alpha = 1
-                
-            }, completion: { (isComplete) in
-                
             })
         }
     }
