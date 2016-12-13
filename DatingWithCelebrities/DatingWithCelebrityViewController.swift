@@ -64,8 +64,8 @@ class DatingWithCelebrityViewController: BaseViewController {
             fatalError("datingWithCelebrity naplnit zo segue")
         }
         
-        photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-detail")!)
         photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-love")!)
+        photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-detail")!)
         photos.append(UIImage(named: "\(datingWithCelebrity!.celebrity!.id)-select")!)
         
         currPhotoImageView.image = photos.first

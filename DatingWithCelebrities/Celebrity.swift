@@ -12,7 +12,7 @@ import CoreData
 
 
 enum PhotoType: String {
-    case Select = "select", Detail = "detail"
+    case Select = "select", Detail = "detail", Love = "love"
 }
 
 
